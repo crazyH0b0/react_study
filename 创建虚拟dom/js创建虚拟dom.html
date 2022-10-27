@@ -16,7 +16,9 @@
 </body>
 </html>
 <script type="text/babel" >
-  const element = React.createElement('h1', {id:"title"}, 'Hello World');
+  // const element = React.createElement('h1', {id:"title"}, 'Hello World');
+  const element = React.createElement('h1', {id:"title"}, React.createElement("span",null,"inner_span"));
+ 
   ReactDOM.render(element, document.getElementById('box'));
  
 </script>
